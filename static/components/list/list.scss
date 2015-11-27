@@ -1,0 +1,52 @@
+@import '/static/css/base.scss';
+
+.app-main-list{
+	position: relative;
+	min-height: $mainMinHeight - $space * 2 - 2;
+	padding-bottom: $space * 4;
+}
+.page-header{
+	padding: 0 0 $space/2 0;
+	margin: 0;
+	.glyphicon{
+		top: $space*.1;
+		margin-left: $space/2;
+	}
+	h1{
+		font-size: $fontSize+4;
+		font-weight: normal;
+		margin: $space/2 0;
+	}
+}
+
+.main-list{
+	margin-top: $space*1.5;
+	padding-right: 0;
+	.row{
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		a{
+			overflow: hidden;
+			display: inline-block;
+			width: 100%;
+		    text-overflow: ellipsis;
+		}
+	}
+	.row > div{
+		@include borderMix();
+		height: $space*2;
+		line-height: $space*2;
+		margin: -1px;
+	}
+}
+.page-list{
+	position: absolute;
+	right: $space*.75;
+	bottom: -$space;
+	.pagination-lg > li > a,
+	.pagination-lg > li > span{
+		font-size: $fontSize+2;
+		padding: $space*.4 $space*.7;
+	}
+}

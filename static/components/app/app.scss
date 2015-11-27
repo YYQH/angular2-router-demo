@@ -1,0 +1,52 @@
+/***
+ * @Component 	: app
+ * @Writer		: zhangrongming
+ * @Description	: 布局组件样式
+ **/
+@import '/static/css/base.scss';
+
+.app-header{
+	.top{
+		margin: $space/4 $space $space;
+		height: $space*3;
+		.logo-img{
+			float: left;
+			margin-top: $space / 2;
+		}
+		.login{
+			float: right;
+			margin-top: $space*.75;
+			line-height: $space*2;
+		}
+		h1{
+			display: inline-block;
+			padding-left: $space;
+			font-size: $fontSize+10;
+			margin: $space*.75 0 0 0;
+			line-height: $space*2;
+		}
+		@include borderBottomMix;
+	}
+}
+
+.app-nav{
+	@include borderMix;
+	width: $navWidth - $space;
+	float: left;
+	margin-left: $space;
+	padding: $space / 2;
+	min-height: $mainMinHeight;
+}
+.app-main{
+	@include borderMix;
+	margin-left: $navWidth + $space;
+	margin-right: $space;
+	padding: $space / 2;
+	min-height: $mainMinHeight;
+	display: flex;
+	margin-bottom: $space;
+	.app-main-inner{
+		display: block;
+		width: 100%;
+	}
+}

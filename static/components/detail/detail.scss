@@ -1,0 +1,31 @@
+@import '/static/css/base.scss';
+
+.page-header{
+	padding: 0 0 $space/2 0;
+	margin: 0;
+	.glyphicon{
+		top: $space*.1;
+		margin-left: $space/2;
+	}
+	h1{
+		font-size: $fontSize+4;
+		font-weight: normal;
+		margin: $space/2 0;
+	}
+}
+
+.main-form{
+	margin-top: $space/2;
+	.row{
+		@include borderBottomMix(1px dashed #e6e6e6);
+		display: inline-block;
+		width: 100%;
+		height: $space*3;
+		line-height: $space*3;
+		margin: 0 auto;
+		.col-lg-2{
+			text-align: right;
+		}
+
+	}
+}

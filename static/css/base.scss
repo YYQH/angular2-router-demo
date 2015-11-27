@@ -1,0 +1,26 @@
+$space  		: 20px;
+$fontSize		: 14px;
+$navWidth 		: $space*10;		// 导航宽度
+$mainMinHeight 	: 670px;		// 内容区域最小高度
+$chooseColor 	: green;		// nav choose state
+$defaultColor 	: #333;
+$defaultZIndex 	: 10;
+
+@mixin borderBottomMix($border:1px solid #ccc) {
+  border-bottom:$border;
+}
+@mixin borderMix($border:1px solid #ccc) {
+  border:$border;
+}
+@mixin noSpace(){
+	margin: 0;
+	padding: 0;
+}
+@mixin heightLineHeight($height: 100%){
+    height: $height;
+    line-height: $height;
+}
+@mixin boxShadow(){
+	box-shadow: 1px 0px 1px 0 rgba(0,0,0,0.072);
+    -webkit-box-shadow: 1px 2px 1px 0 rgba(0,0,0,0.072);
+}

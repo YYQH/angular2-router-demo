@@ -1,0 +1,45 @@
+@import '/static/css/base.scss';
+
+.nav-list{
+	&,ul{
+		@include noSpace;
+		margin-left: $space/4;
+	}
+	.nav-part{
+		@include borderBottomMix;
+		padding: $space/4 0;
+	}
+	.no-border{
+		border-bottom: none;
+	}
+	.nav-part ul{
+		margin-left: $space * 1.2;
+	}
+	li{
+		white-space: nowrap;
+		list-style: none;
+	}
+	h3{
+		@include heightLineHeight($space*1.5);
+		@include noSpace;
+		font-size: $fontSize;
+		position: relative;
+		font-weight: normal;
+		padding-left: $space/2;
+	}
+	a{
+		color: $defaultColor;
+	}
+	a:hover{
+		text-decoration: none;
+	}
+	a.router-link-active{
+		text-decoration: none;
+		color: $chooseColor;
+	}
+	a.router-link-active::after{
+		content: '>';
+		margin-left: $space*0.1;
+		display: inline;
+	}
+}
